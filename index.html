@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pasang Tamang — Web Developer</title>
+  <meta name="description" content="Pasang Tamang — Aspiring web developer from Kathmandu, Nepal. Building projects and looking for internship opportunities."/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <a class="nav-logo" href="#home">
+      <span class="logo-dot"></span>
+      Pasang Tamang
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"     data-target="home">Home</a></li>
+      <li><a href="#about"    data-target="about">About</a></li>
+      <li><a href="#projects" data-target="projects">Projects</a></li>
+      <li><a href="#contact"  data-target="contact">Contact</a></li>
+    </ul>
+    <a href="mailto:pasanghilp@gmail.com" class="nav-cta">Hire me</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home"     data-target="home">Home</a>
+    <a href="#about"    data-target="about">About</a>
+    <a href="#projects" data-target="projects">Projects</a>
+    <a href="#contact"  data-target="contact">Contact</a>
+  </div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress">
+    <div class="scroll-progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section id="home" class="hero">
+    <div class="hero-grid"></div>
+
+    <div class="hero-body">
+      <div class="hero-inner">
+
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Available for internships
+        </div>
+
+        <h1 class="hero-heading">
+          Hi, I'm <em>Pasang</em>.<br>I build for the web.
+        </h1>
+
+        <p class="hero-typed">
+          <span id="typed-text"></span><span class="cursor"></span>
+        </p>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">
+            View my work
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="cv.pdf" download class="btn-secondary">
+            Download CV
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 2v7M3 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="tech-row">
+          <span class="tech-label">Built with</span>
+          <span class="tech-chip">HTML</span>
+          <span class="tech-chip">CSS</span>
+          <span class="tech-chip">JavaScript</span>
+          <span class="tech-chip">Git</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about" class="about">
+    <p class="sec-label">About me</p>
+    <h2 class="sec-heading">Who I am</h2>
+
+    <div class="about-layout">
+
+      <div class="about-bio">
+        <p>I'm <strong>Pasang Tamang</strong>, a freshly graduated +2 student and self-taught web developer from <strong>Kathmandu, Nepal</strong>. I discovered my passion for coding and haven't looked back since.</p>
+        <p>Right now I'm building <strong>5 real projects</strong> to prepare for my first software internship. Each project pushes me to learn something new — from APIs and JavaScript logic to responsive layouts and clean design.</p>
+        <p>I believe the best way to learn is by building. So that's exactly what I'm doing.</p>
+
+        <div class="facts">
+          <div class="fact"><span class="fact-dot"></span>Currently learning: JavaScript & REST APIs</div>
+          <div class="fact"><span class="fact-dot"></span>Goal: Land my first software internship</div>
+          <div class="fact"><span class="fact-dot"></span>Education: Freshly completed +2, Kathmandu</div>
+          <div class="fact"><span class="fact-dot"></span>Based in: Kathmandu, Nepal 🇳🇵</div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-card">
+            <span class="stat-num">5</span>
+            <p class="stat-label">Projects built</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">+2</span>
+            <p class="stat-label">Education done</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">∞</span>
+            <p class="stat-label">Things to learn</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-skills">
+        <p class="skill-group-title">Technical skills</p>
+
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">HTML</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">CSS</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">JavaScript</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">Responsive Design</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span class="skill-name">Git & GitHub</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        </div>
+
+        <p class="skill-group-title">Tools & workflow</p>
+        <div class="chip-row">
+          <span class="chip">VS Code</span>
+          <span class="chip">Git</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">Chrome DevTools</span>
+          <span class="chip">Figma</span>
+          <span class="chip">Netlify</span>
+        </div>
+
+        <p class="skill-group-title">Currently learning</p>
+        <div class="chip-row">
+          <span class="chip chip-accent">React</span>
+          <span class="chip chip-accent">Node.js</span>
+          <span class="chip chip-accent">REST APIs</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects" class="projects">
+    <p class="sec-label">Work</p>
+    <h2 class="sec-heading">My projects</h2>
+    <p class="sec-sub">5 projects built from scratch — each one a new skill unlocked.</p>
+
+    <div class="proj-grid">
+
+      <div class="proj-card featured">
+        <div class="card-top">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span class="proj-icon">🗂️</span>
+            <span class="featured-badge">This site</span>
+          </div>
+          <a href="#" target="_blank" class="card-arrow">↗</a>
+        </div>
+        <p class="proj-num">01</p>
+        <h3 class="proj-title">Personal Portfolio</h3>
+        <p class="proj-desc">Designed and built from scratch — sticky navbar, animated hero, projects section, skill bars, and a working contact form. No frameworks, just vanilla HTML, CSS, and JS.</p>
+        <div class="tag-row">
+          <span class="tag tag-accent">HTML</span>
+          <span class="tag tag-accent">CSS</span>
+          <span class="tag tag-accent">JavaScript</span>
+          <span class="tag">Responsive</span>
+          <span class="tag">Formspree</span>
+        </div>
+        <div class="card-links">
+          <a href="#" target="_blank" class="card-link primary">↗ Live demo</a>
+          <a href="https://github.com/pasangtamang" target="_blank" class="card-link">⌥ GitHub</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="card-top">
+          <span class="proj-icon">✅</span>
+          <a href="#" target="_blank" class="card-arrow">↗</a>
+        </div>
+        <p class="proj-num">02</p>
+        <h3 class="proj-title">Task Manager App</h3>
+        <p class="proj-desc">A to-do app with local storage so tasks persist on refresh. Add, complete, and delete tasks with smooth animations.</p>
+        <div class="tag-row">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JS</span>
+          <span class="tag">localStorage</span>
+        </div>
+        <div class="card-links">
+          <a href="#" target="_blank" class="card-link primary">↗ Live demo</a>
+          <a href="#" target="_blank" class="card-link">⌥ GitHub</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="card-top">
+          <span class="proj-icon">🌤️</span>
+          <a href="#" target="_blank" class="card-arrow">↗</a>
+        </div>
+        <p class="proj-num">03</p>
+        <h3 class="proj-title">Weather Dashboard</h3>
+        <p class="proj-desc">Fetches real-time weather using the OpenWeather API. Search any city and see temperature, humidity, and a 5-day forecast.</p>
+        <div class="tag-row">
+          <span class="tag">JavaScript</span>
+          <span class="tag">Fetch API</span>
+          <span class="tag">OpenWeather</span>
+        </div>
+        <div class="card-links">
+          <a href="#" target="_blank" class="card-link primary">↗ Live demo</a>
+          <a href="#" target="_blank" class="card-link">⌥ GitHub</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="card-top">
+          <span class="proj-icon">🧠</span>
+          <a href="#" target="_blank" class="card-arrow">↗</a>
+        </div>
+        <p class="proj-num">04</p>
+        <h3 class="proj-title">Quiz App</h3>
+        <p class="proj-desc">Multiple-choice quiz with a timer, score tracker, and end screen. Questions fetched from the Open Trivia DB API.</p>
+        <div class="tag-row">
+          <span class="tag">JavaScript</span>
+          <span class="tag">REST API</span>
+          <span class="tag">CSS Grid</span>
+        </div>
+        <div class="card-links">
+          <a href="#" target="_blank" class="card-link primary">↗ Live demo</a>
+          <a href="#" target="_blank" class="card-link">⌥ GitHub</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="card-top">
+          <span class="proj-icon">🧮</span>
+          <a href="#" target="_blank" class="card-arrow">↗</a>
+        </div>
+        <p class="proj-num">05</p>
+        <h3 class="proj-title">Calculator</h3>
+        <p class="proj-desc">A fully functional calculator with keyboard support, operator chaining, and a history log — built with pure JS and CSS Grid.</p>
+        <div class="tag-row">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS Grid</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="card-links">
+          <a href="#" target="_blank" class="card-link primary">↗ Live demo</a>
+          <a href="#" target="_blank" class="card-link">⌥ GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact" class="contact">
+    <p class="sec-label">Get in touch</p>
+    <h2 class="sec-heading">Let's talk</h2>
+    <p class="sec-sub">Open to internship opportunities, collaborations, or just a chat.</p>
+
+    <div class="contact-layout">
+
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-icon">✉️</div>
+          <div>
+            <p class="info-label">Email</p>
+            <p class="info-value"><a href="mailto:pasanghilp@gmail.com">pasanghilp@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <div>
+            <p class="info-label">Location</p>
+            <p class="info-value">Kathmandu, Nepal</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">💼</div>
+          <div>
+            <p class="info-label">Status</p>
+            <p class="info-value available">Available for internships</p>
+          </div>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/pasangtamang" target="_blank" class="social-btn">⌥ GitHub</a>
+          <a href="https://linkedin.com/in/pasangtamang" target="_blank" class="social-btn">in LinkedIn</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST">
+        <div class="form-fields">
+          <div class="form-row">
+            <div class="field" id="field-name">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name"/>
+              <span class="field-error">Please enter your name</span>
+            </div>
+            <div class="field" id="field-email">
+              <label for="femail">Email</label>
+              <input type="email" id="femail" name="email" placeholder="you@email.com"/>
+              <span class="field-error">Enter a valid email</span>
+            </div>
+          </div>
+          <div class="field" id="field-subject">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" name="subject" placeholder="Internship inquiry, collab..."/>
+            <span class="field-error">Please add a subject</span>
+          </div>
+          <div class="field" id="field-msg">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" name="message" rows="4" placeholder="Hi Pasang, I'd love to..."></textarea>
+            <span class="field-error">Please write a message</span>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <div class="spinner"></div>
+            <span class="btn-label">Send message →</span>
+          </button>
+        </div>
+        <div class="success-msg" id="successMsg">
+          <div class="success-icon">✓</div>
+          <p class="success-title">Message sent!</p>
+          <p class="success-sub">Thanks for reaching out. I'll get back to you within 24 hours.</p>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <span class="logo-dot"></span>
+        Pasang Tamang
+      </div>
+      <nav class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 <span>Pasang Tamang</span> — Built with HTML, CSS & JS · Kathmandu, Nepal</p>
+      <div class="footer-socials">
+        <a href="https://github.com/pasangtamang" target="_blank" class="social-icon" title="GitHub">⌥</a>
+        <a href="https://linkedin.com/in/pasangtamang" target="_blank" class="social-icon" title="LinkedIn">in</a>
+        <a href="mailto:pasanghilp@gmail.com" class="social-icon" title="Email">✉</a>
+      </div>
+      <button class="back-top" id="backTop">↑ Back to top</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

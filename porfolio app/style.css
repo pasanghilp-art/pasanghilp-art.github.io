@@ -872,3 +872,9 @@ img { max-width: 100%; display: block; }
   .stats-row { grid-template-columns: repeat(3, 1fr); }
   .proj-card.featured { grid-column: span 1; }
 }
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

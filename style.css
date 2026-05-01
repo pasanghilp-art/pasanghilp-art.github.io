@@ -517,7 +517,7 @@ img { max-width: 100%; display: block; }
   border-color: var(--accent-border);
   background: linear-gradient(135deg, #fff 80%, rgba(26,107,60,0.03));
 }
-@media (min-width: 560px) { .proj-card.featured { grid-column: span 2; } }
+.proj-card.featured { grid-column: span 2; } }
 
 .card-top {
   display: flex;

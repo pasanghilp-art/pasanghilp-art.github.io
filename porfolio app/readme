@@ -1,0 +1,46 @@
+# 🌐 Personal Portfolio — Pasang Tamang
+
+A clean, responsive personal portfolio website built from scratch with vanilla HTML, CSS, and JavaScript.
+
+## 🔗 Live Demo
+[pasanghilp-art.github.io](https://pasanghilp-art.github.io)
+
+## 📸 Features
+- Sticky navbar with smooth scroll and mobile hamburger menu
+- Animated hero section with typing effect
+- About section with animated skill bars
+- Projects section with hover effects
+- Working contact form powered by Formspree
+- Fully responsive on all screen sizes
+
+## 🛠️ Built With
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- Formspree (contact form)
+- Google Fonts (Fraunces + DM Sans)
+- GitHub Pages (deployment)
+
+## 📁 Project Structure
+```
+portfolio/
+├── index.html      # Main HTML file
+├── style.css       # All styles
+├── script.js       # JavaScript logic
+└── cv.pdf          # Downloadable CV
+```
+
+## 🚀 Getting Started
+1. Clone the repo
+```bash
+git clone https://github.com/pasanghilp-art/pasanghilp-art.github.io.git
+```
+2. Open `index.html` in your browser
+
+## 📬 Contact
+- Email: pasanghilp@gmail.com
+- LinkedIn: linkedin.com/in/pasang-tamang1
+- GitHub: github.com/pasanghilp-art
+
+---
+Built with ❤️ by Pasang Tamang 🇳🇵
